@@ -2,18 +2,17 @@
 <html>
 <head>
   <link href="CSS/style.css" type="text/css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <header style="display: flex; justify-content: flex-end;">
-       <nav class="inline-block">
-           <ul style="display: flex; justify-content: space-between;">
-               <li>About Me</li>
-               <li>Resume</li>
-           </ul>
+       <nav>
+           <div style="display: flex; justify-content: space-between;">
+               <button style="width: 75px; height: 23px; margin-right: 10px;">Home</button>
+               <button style="width: 75px; height: 23px;">Resume</button>
+           </div>
        </nav>
-   </header>
    <section>
-         <img src="images/profpic.1.JPG">
+         <img src="images/HEADSHOT.jpg">
     <div class="flex-container">
         <div>
             <h1 style="font-size: 40px;">Hi, I'm Cory </h1>
@@ -38,7 +37,7 @@
     </section>
         </section>
     <h4>Skills</h4>
-        <div style="display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows;">
+        <div class="grid-container" style= "display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows;">
             <div>User Research
                 <ul>
                     <li>Proficient in both qualitative and quantitative research methods.</li>

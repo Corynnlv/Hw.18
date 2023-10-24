@@ -28,7 +28,7 @@ h4{
     display: grid;
     grid-template-columns: 250px 250px 250px 250px;
     grid-gap: 30px;
-    width: 1500px;
+    width: 100%;
     height: auto;
     justify-content: center;
     margin-left: 10px;
@@ -41,7 +41,7 @@ h4{
 }
  
 
-@media only screen and(max-width: 600px) {
+@media only screen and (max-width: 600px) {
     nav {
         display: block;
         height:auto;
@@ -49,15 +49,17 @@ h4{
     }
     img {
         width: 100px;
-        margin: 80px auto 0;;
+        margin-top: 60px;
         display: block;
-        float: left;
+        float: left
+
     }
 
     .flex-container {
-        margin-left: 135px;
-        width: 250px;
-        margin-top: 50px;
+        width: 450px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
     }
 
     h4{
@@ -66,13 +68,19 @@ h4{
     }
 
     #skillsGrid{
-        grid-template-rows: 150px 150px 150px 150px;
-        grid-template-columns: 1fr;
+        grid-template-rows: 180px 180px 180px 180px;
+        grid-template-columns: 500px;
+        width:auto;
+        margin-left: 50px;
+        float: left;
         grid-template-areas:
         "userResearch"
         "researchAnalysis"
         "userEmpathy"
-        "teamwork"
+        "teamwork";
+        
+        
+        
     }
     }
 

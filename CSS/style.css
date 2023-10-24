@@ -24,22 +24,24 @@ h4{
     font-size: 40px;
     font-style: bold;
 }
-.grid-container{
+#skillsGrid{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 40px;
-    margin-left: 150px;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-gap: 30px;
+    width: 1500px;
+    height: auto;
     justify-content: center;
-    width: 1200px;
-    height: auto;
+    margin-left: 10px;
 }
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    width: 1000px;
-    height: auto;
 
+.skillsGridArea {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 12px;
+}
+ 
 
-@media only screen and (max-width: 600px) {
+@media only screen and(max-width: 600px) {
     nav {
         display: block;
         height:auto;
@@ -63,10 +65,15 @@ h4{
         text-align: center;
     }
 
-    .grid-container{
-        display: grid;
+    #skillsGrid{
+        grid-template-rows: 150px 150px 150px 150px;
         grid-template-columns: 1fr;
-        justify-items: center;
+        grid-template-areas:
+        "userResearch"
+        "researchAnalysis"
+        "userEmpathy"
+        "teamwork"
     }
     }
 
+   
